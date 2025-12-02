@@ -15,6 +15,11 @@ pub fn part_one(input: &str) -> Option<u64> {
             let chars: Vec<char> = s.chars().collect();
 
             let mid = chars.len()/2;
+
+            if mid % 2 != 0 {
+                continue;
+            }
+
             let part1: String = chars[..mid].iter().collect();
             let part2: String = chars[mid..].iter().collect();
             
