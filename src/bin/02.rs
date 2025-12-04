@@ -16,7 +16,7 @@ pub fn part_one(input: &str) -> Option<u64> {
 
             let mid = chars.len()/2;
 
-            if mid % 2 != 0 {
+            if chars.len() % 2 != 0 {
                 continue;
             }
 
