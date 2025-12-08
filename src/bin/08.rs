@@ -30,7 +30,7 @@ pub fn part_one(input: &str) -> Option<u64> {
 
     distances.sort_by(|a, b| a.2.partial_cmp(&b.2).unwrap());
 
-    for i in 0..1000 { 
+    for i in 0..10 { 
         let (p1, p2, _) = distances[i];
         let circuit_i = circuits.iter().position(|c| c.contains(&p1)); 
         let circuit_j = circuits.iter().position(|c| c.contains(&p2)); 
